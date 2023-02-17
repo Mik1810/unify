@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="412.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.ModifyUserController">
+   <children>
+      <VBox prefHeight="434.0" prefWidth="672.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="675.0" text="Modify a user">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="412.0" prefWidth="378.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="398.0">
+                     <VBox.margin>
+                        <Insets top="142.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="200.0" text="Username:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernameTextField" prefHeight="26.0" prefWidth="186.0" promptText="Username..." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="152.0" prefHeight="26.0" prefWidth="398.0">
+                     <children>
+                        <VBox>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="200.0" text="Password:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="passwordTextField" prefHeight="26.0" prefWidth="186.0" promptText="Username..." />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="finishButton" mnemonicParsing="false" onAction="#finishAction" prefHeight="40.0" prefWidth="102.0" text="Finish">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+</HBox>

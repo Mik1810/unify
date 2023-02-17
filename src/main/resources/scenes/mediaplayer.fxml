@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="52.0" prefWidth="790.0" style="-fx-background-color: #016170;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.musicplayer.MediaPlayerController">
+   <children>
+      <ImageView fx:id="currentSongImageView" fitHeight="150.0" fitWidth="89.0" onMouseClicked="#goToInformationsAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/music-placeholder.png" />
+         </image>
+         <HBox.margin>
+            <Insets bottom="-1.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="89.0" prefWidth="210.0">
+         <children>
+            <HBox>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label onMousePressed="#rotateTitle" prefHeight="30.0" prefWidth="79.0" text="Title: " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titleCurrentSongLabel" ellipsisString="" layoutX="10.0" layoutY="10.0" onMousePressed="#rotateTitle" prefHeight="30.0" prefWidth="166.0" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label onMousePressed="#rotateArtist" prefHeight="24.0" prefWidth="98.0" text="Author: " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="authorCurrentSongLabel" ellipsisString="" layoutX="10.0" layoutY="10.0" onMousePressed="#rotateArtist" prefHeight="24.0" prefWidth="166.0" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="89.0" prefWidth="321.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="281.0">
+               <children>
+                  <HBox fx:id="shuffleHBox" prefHeight="28.0" prefWidth="17.0" style="-fx-border-color: transparent; -fx-border-radius: 10;">
+                     <children>
+                        <ImageView fx:id="shuffleImageView" fitHeight="25.0" fitWidth="80.0" onMouseClicked="#shuffleAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/shuffle.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="3.0" right="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="15.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <ImageView fx:id="previousSongImageView" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#previousSongAction" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@icons/icons8-vai-all'inizio-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="playSongImageView" fitHeight="50.0" fitWidth="50.0" layoutX="40.0" layoutY="30.0" onMouseClicked="#playPauseAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8-riproduci-60.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="nextSongImageView" fitHeight="50.0" fitWidth="50.0" layoutX="121.0" layoutY="30.0" onMouseClicked="#nextSongAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8-vai-alla-fine-60.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox fx:id="repeatHBox" layoutX="16.0" layoutY="25.0" prefHeight="25.0" prefWidth="15.0" style="-fx-border-color: transparent; -fx-border-radius: 10;">
+                     <children>
+                        <ImageView fx:id="repeatImageView" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#repeatAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/ripeti.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="15.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Slider fx:id="progressBar" prefHeight="14.0" prefWidth="354.0" stylesheets="@style/progressbar.css">
+               <VBox.margin>
+                  <Insets bottom="3.0" />
+               </VBox.margin></Slider>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT">
+         <HBox.margin>
+            <Insets bottom="5.0" left="170.0" right="10.0" top="5.0" />
+         </HBox.margin>
+         <children>
+            <ImageView fx:id="volumeImageView" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@icons/volume.png" />
+               </image>
+            </ImageView>
+            <Slider fx:id="volumeSlider" majorTickUnit="100.0" orientation="VERTICAL" showTickLabels="true" styleClass="volume-slider" stylesheets="@style/volume-slider.css" />
+         </children>
+      </HBox>
+   </children>
+</HBox>

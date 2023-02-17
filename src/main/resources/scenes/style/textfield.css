@@ -1,0 +1,39 @@
+.button {
+   -fx-background-color: transparent; 
+   -fx-background-radius: 15px; 
+   -fx-background-color: transparent;
+   -fx-border-color: #9be6ff;
+   -fx-border-radius: 15px;
+   -fx-border-width: 2;
+	
+}
+
+.button: hover {
+   -fx-background-color: #9be6ff;
+-fx-background-radius: 15px; 
+}
+
+.text-field3{
+   -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: #9be6ff;
+   -fx-border-width: 2;
+   -fx-border-radius: 20;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-color: white;
+   -fx-prompt-text-fill: #F4F4F4;
+   -fx-text-fill: #F4F4F4;
+}
+
+.text-field3:focused {
+    -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: #9be6ff;
+   -fx-border-width: 2;
+   -fx-border-radius: 20;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-fill: white;
+
+}

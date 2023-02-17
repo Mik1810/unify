@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="413.0" prefWidth="647.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.GenreTableController">
+   <children>
+      <HBox prefHeight="425.0" prefWidth="647.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label prefHeight="47.0" prefWidth="282.0" text="Songs">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <TableView fx:id="songsTableView" prefHeight="389.0" prefWidth="302.0" stylesheets="@style/nonullrow-tableview.css">
+                    <columns>
+                        <TableColumn fx:id="imageSongTableColumn" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="Image" />
+                      <TableColumn fx:id="titleSongTableColumn" prefWidth="119.20001202821732" text="Title" />
+                      <TableColumn fx:id="artistSongTableColumn" prefWidth="94.4000244140625" text="Artist" />
+                    </columns>
+                  </TableView>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="414.0" prefWidth="366.0">
+               <children>
+                  <Label prefHeight="72.0" prefWidth="342.0" text="Album">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="albumTableView" prefHeight="414.0" prefWidth="405.0" stylesheets="@style/nonullrow-tableview.css">
+                     <columns>
+                        <TableColumn fx:id="imageAlbumTableColumn" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="Image" />
+                        <TableColumn fx:id="titleAlbumTableColumn" prefWidth="120.79998475313187" text="Title" />
+                        <TableColumn fx:id="artistAlbumTableColumn" prefWidth="138.40000915527344" text="Artist" />
+                     </columns>
+                  </TableView>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

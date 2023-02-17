@@ -1,0 +1,14 @@
+14
+1,Eminem,Eminem-1.jpg,Eminem-2.jpg,EminemBio.txt,INDIVIDUAL
+2,U2,U2-1.jpg,U2-2.jpg,U2Bio.txt,BAND,Bono,The Edge,Adam Clayton,Larry Mullen Jr.,@
+3,Beethoven,Beethoven-1.jpg,Beethoven-2.jpg,BeethovenBio.txt,INDIVIDUAL
+4,Coldplay,Coldplay-1.jpg,Coldplay-2.jpg,ColdplayBio.txt,BAND,Chris Martin,Jonny Buckland,Guy Berryman,Will Champion,@
+5,Calcutta,Calcutta-1.jpg,Calcutta-2.jpg,CalcuttaBio.txt,INDIVIDUAL
+6,Blink-182,Blink-182-1.jpg,Blink-182-2.jpg,blink-182Bio.txt,BAND,Matt Skiba,Mark Hoppus,Travis Barker,@
+7,Claudio Lolli,Claudio Lolli-1.jpg,Claudio Lolli-2.jpg,Claudio LolliBio.txt,INDIVIDUAL
+8,Frah Quintale,Frah Quintale-1.jpg,Frah Quintale-2.jpg,Frah QuintaleBio.txt,INDIVIDUAL
+9,Spoon,Spoon-1.jpg,Spoon-2.jpg,SpoonBio.txt,BAND,Britt Daniel,Jim Eno,Alex Fischel,Gerardo Larios,@
+10,Miss Keta,Miss Keta-1.jpg,Miss Keta-2.jpg,Miss KetaBio.txt,INDIVIDUAL
+11,Mattak,Mattak-1.jpg,Mattak-2.jpg,MattakBio.txt,INDIVIDUAL
+12,Bresh,Bresh-1.jpg,Bresh-2.jpg,BreshBio.txt,INDIVIDUAL
+13,Linkin Park,Linkin Park-1.jpg,Linkin Park-2.jpg,Linkin ParkBio.txt,BAND,Joe Hahn,Mike Shinoda,Brad Delson,Chester Bennington,Rob Bourdon,Phoenix,@

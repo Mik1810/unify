@@ -1,0 +1,5 @@
+.bodybg{
+ -fx-background-image: url('background/login-sfondo.jpg');
+ -fx-background-size: 100% 100%;
+
+}

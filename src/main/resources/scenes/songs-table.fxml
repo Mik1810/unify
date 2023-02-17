@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="songsTableView" editable="true" prefHeight="400.0" prefWidth="600.0" stylesheets="@style/nonullrow-tableview.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.SongsTableController">
+  <columns>
+      <TableColumn fx:id="imageTableColumn" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="Image" />
+    <TableColumn fx:id="titleTableColumn" prefWidth="220.0" text="Title" />
+    <TableColumn fx:id="authorTableColumn" minWidth="1.60003662109375" prefWidth="141.60003662109375" text="Author" />
+      <TableColumn fx:id="albumTableColumn" prefWidth="178.40008544921875" text="Album" />
+  </columns>
+</TableView>

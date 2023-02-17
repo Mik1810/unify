@@ -1,0 +1,19 @@
+19
+1,Love The Way You Lie,Eminem,RAP,Recovery,Love The Way You Lie Cover.jpg,Love The Way You Lie.txt
+2,Rap God,Eminem,RAP,The Marshall Mathers LP 2,Rap God Cover.jpg,Rap God.txt
+3,With Or Without You,U2,POP,The Joshua Tree,With Or Without You Cover.jpg,With Or Without You.txt
+4,Beautiful Day,U2,ROCK,All That You Can't Leave Behind,Beautiful Day Cover.jpg,Beautiful Day.txt
+5,Moonlight Sonata,Beethoven,CLASSIC,Beethoven - Best Pieces,Moonlight Sonata Cover.jpg,Moonlight Sonata.txt
+6,The Scientist,Coldplay,POP,A Rush Of Blood To The Head,The Scientist Cover.jpg,The Scientist.txt
+7,Yellow,Coldplay,POP,Yellow,Yellow Cover.jpg,Yellow.txt
+8,Pesto,Calcutta,INDIE,Evergreen,Pesto Cover.jpg,Pesto.txt
+9,Frosinone,Calcutta,INDIE,Mainstream,Frosinone Cover.jpg,Frosinone.txt
+10,Bored To Death - Acoustic Version,Blink-182,PUNK,California (Deluxe Edition),Bored To Death - Acoustic Version Cover.jpg,Bored To Death - Acoustic Version.txt
+11,Adam's Song,Blink-182,ROCK,Enema Of The State,Adam's Song Cover.jpg,Adam's Song.txt
+12,Michel,Claudio Lolli,SONGWRITING,Aspettando Godot,Michel Cover.jpg,Michel.txt
+13,Missili,Frah Quintale,INDIE,Lungolinea,Missili Cover.jpg,Missili.txt
+14,The Way We Get By,Spoon,INDIE,Kill The Moonlight,The Way We Get By Cover.jpg,The Way We Get By.txt
+15,Finimondo,Miss Keta,DANCE,Finimondo,Finimondo Cover.jpg,Finimondo.txt
+16,L'Anima Giusta,Mattak,RAP,Riproduzione Vietata,L'Anima Giusta Cover.jpg,L'Anima Giusta.txt
+17,Guasto d'amore,Bresh,INDIE,Guasto d'Amore,Guasto d'amore Cover.jpg,Guasto d'amore.txt
+18,Shadow of the Day,Linkin Park,ROCK,Minutes to Midnight,Shadow of the Day Cover.jpg,Shadow of the Day.txt

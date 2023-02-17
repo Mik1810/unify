@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="640.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.SettingsController">
+   <children>
+      <Label prefHeight="45.0" prefWidth="600.0" text="Settings">
+         <font>
+            <Font name="Bauhaus 93" size="31.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+      </Label>
+      <HBox layoutX="10.0" layoutY="56.0" prefHeight="54.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="54.0" prefWidth="60.0" text="Artist: ">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="54.0" prefWidth="373.0" text="View, create, modify or delete">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="artistViewAction" mnemonicParsing="false" onAction="#artistSettingsAction" prefHeight="26.0" prefWidth="81.0" text="View">
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="54.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="54.0" prefWidth="63.0" text="Album: ">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="54.0" prefWidth="370.0" text="View, modify or delete">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="albumViewAction" mnemonicParsing="false" onAction="#albumSettingsAction" prefHeight="26.0" prefWidth="81.0" text="View">
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="54.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="54.0" prefWidth="50.0" text="Song: ">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="54.0" prefWidth="381.0" text="View, modify or delete">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="songViewAction" mnemonicParsing="false" onAction="#songSettingsAction" prefHeight="26.0" prefWidth="81.0" text="View">
+               <HBox.margin>
+                  <Insets left="60.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,19 @@
+19
+1,Recovery,RAP,Recovery Cover.jpg,Eminem
+2,The Marshall Mathers LP 2,RAP,The Marshall Mathers LP 2 Cover.jpg,Eminem
+3,The Joshua Tree,ROCK,The Joshua Tree Cover.jpg,U2
+4,All That You Can't Leave Behind,ROCK,All That You Can't Leave Behind Cover.jpg,U2
+5,Beethoven - Best Pieces,CLASSIC,Beethoven - Best Pieces Cover.jpg,Beethoven
+6,A Rush Of Blood To The Head,POP,A Rush Of Blood To The Head Cover.jpg,Coldplay
+7,Yellow,POP,Yellow Cover.jpg,Coldplay
+8,Evergreen,INDIE,Evergreen Cover.jpg,Calcutta
+9,Mainstream,INDIE,Mainstream Cover.jpg,Calcutta
+10,California (Deluxe Edition),PUNK,California (Deluxe Edition) Cover.jpg,Blink-182
+11,Enema Of The State,PUNK,Enema Of The State Cover.jpg,Blink-182
+12,Aspettando Godot,SONGWRITING,Aspettando Godot Cover.jpg,Claudio Lolli
+13,Lungolinea,INDIE,Lungolinea Cover.jpg,Frah Quintale
+14,Kill The Moonlight,INDIE,Kill The Moonlight Cover.jpg,Spoon
+15,Finimondo,DANCE,Finimondo Cover.jpg,Miss Keta
+16,Riproduzione Vietata,RAP,Riproduzione Vietata Cover.jpg,Mattak
+17,Guasto d'Amore,INDIE,Guasto d'Amore Cover.jpg,Bresh
+18,Minutes to Midnight,ROCK,Minutes to Midnight Cover.jpg,Linkin Park

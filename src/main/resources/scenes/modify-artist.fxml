@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.ModifyArtistController">
+   <children>
+      <VBox prefHeight="412.0" prefWidth="683.0">
+         <children>
+            <Label fx:id="modifyArtistLabel" prefHeight="45.0" prefWidth="587.0" text="Modify: ">
+               <font>
+                  <Font name="Bauhaus 93" size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="720.0" textAlignment="CENTER" textFill="RED" underline="true">
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="120.0" prefWidth="587.0">
+               <children>
+                  <ImageView fx:id="image1ImageView" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="100.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@icons/music-placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="120.0" prefWidth="456.0" />
+                  <ImageView fx:id="image2ImageView" fitHeight="120.0" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="100.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@icons/music-placeholder.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="587.0">
+               <children>
+                  <HBox prefHeight="36.0" prefWidth="220.0">
+                     <children>
+                        <Label fx:id="image1Label" prefHeight="36.0" prefWidth="130.0" text="Select first image..." textFill="#00000082" wrapText="true" />
+                        <Button fx:id="changeImage1Button" mnemonicParsing="false" onAction="#changeImage1Action" prefHeight="27.0" prefWidth="70.0" text="Change">
+                           <HBox.margin>
+                              <Insets bottom="2.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="92.0" />
+                  <HBox prefHeight="36.0" prefWidth="233.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Label fx:id="image2Label" prefHeight="36.0" prefWidth="138.0" text="Select second image...." textFill="#00000080" wrapText="true" />
+                        <Button fx:id="changeImage2Button" mnemonicParsing="false" onAction="#changeImage2Action" prefHeight="27.0" prefWidth="70.0" text="Change">
+                           <HBox.margin>
+                              <Insets bottom="2.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="210.0" prefWidth="587.0">
+               <children>
+                  <VBox prefHeight="210.0" prefWidth="690.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Separator depthTest="DISABLE" prefHeight="3.0" prefWidth="645.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <HBox prefHeight="208.0" prefWidth="744.0">
+                           <children>
+                              <VBox fx:id="parentVBox" prefHeight="202.0" prefWidth="644.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="30.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <TextField fx:id="nameTextField" prefHeight="26.0" prefWidth="426.0" promptText="Name...">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <TextArea fx:id="biographyTextArea" prefHeight="94.0" prefWidth="425.0" promptText="Artist's biography..." wrapText="true">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="songsHBox" prefHeight="27.0" prefWidth="347.0">
+                                       <children>
+                                          <ComboBox fx:id="songsComboBox" prefHeight="26.0" prefWidth="346.0">
+                                             <HBox.margin>
+                                                <Insets top="5.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Button fx:id="removeSongsButton" mnemonicParsing="false" onAction="#removeSongsAction" prefHeight="26.0" prefWidth="70.0" text="Remove">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="albumsHBox" prefHeight="27.0" prefWidth="347.0">
+                                       <children>
+                                          <ComboBox fx:id="albumsComboBox" prefHeight="26.0" prefWidth="346.0">
+                                             <HBox.margin>
+                                                <Insets top="5.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                          <Button fx:id="removeAlbumButton" mnemonicParsing="false" onAction="#removeAlbumAction" prefHeight="26.0" prefWidth="70.0" text="Remove">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <VBox alignment="CENTER" prefHeight="202.0" prefWidth="382.0">
+                                 <children>
+                                    <Button fx:id="addAlbumButton" alignment="CENTER" mnemonicParsing="false" onAction="#addAlbumAction" prefHeight="28.0" prefWidth="131.0" text="Add album">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                    <Button fx:id="confirmButton" alignment="CENTER" mnemonicParsing="false" onAction="#confirmAction" prefHeight="34.0" prefWidth="131.0" text="Confirm">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                    <Button fx:id="modifyMembersButton" alignment="CENTER" mnemonicParsing="false" onAction="#modifyMembersAction" prefHeight="28.0" prefWidth="131.0" text="Modify members">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

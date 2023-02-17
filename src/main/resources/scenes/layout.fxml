@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="789.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.LayoutController">
+   <top>
+      <HBox prefHeight="53.0" prefWidth="790.0" style="-fx-background-color: #00E0C6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="homeImage" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#homeAction" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <HBox.margin>
+                  <Insets left="10.0" top="13.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@icons/Post%20grafico%20quadrato%20800x800%20px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="usernameLabel" centerShape="false" contentDisplay="CENTER" prefHeight="54.0" prefWidth="372.0" text="Username " textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" top="6.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="comboBox" prefHeight="26.0" prefWidth="162.0" promptText="TO SEARCH..." visibleRowCount="4">
+               <HBox.margin>
+                  <Insets right="10.0" top="14.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ImageView fx:id="searchIconImage" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/search_icon-removebg-preview.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" top="11.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="searchbarTextField" onAction="#searchAction" prefHeight="31.0" prefWidth="260.0" promptText="Search...">
+               <HBox.margin>
+                  <Insets top="11.0" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fx:id="logoutImage" fitHeight="34.0" fitWidth="33.0" onMouseClicked="#logoutAction" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="5.0" top="11.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@icons/logout-removebg-preview.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="413.0" prefWidth="146.0" style="-fx-background-color: #d1e7ed;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="431.0" prefWidth="146.0">
+               <children>
+                  <VBox fx:id="selectionMenuVBox" prefHeight="378.0" prefWidth="371.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox fx:id="playlistHBox" alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="playlistIconImage" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#playlistAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/icons8-elenco-di-riproduzione-60.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="playlistLabel" onMouseClicked="#playlistAction" prefHeight="65.0" prefWidth="150.0" text="Playlist">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" top="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="albumIconImage" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#albumAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/icons8-album-48.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="albumLabel" onMouseClicked="#albumAction" prefHeight="65.0" prefWidth="150.0" text="Album">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="songIconImage" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#songsAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/icons8-nota-musicale-48.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="songsLabel" onMouseClicked="#songsAction" prefHeight="65.0" prefWidth="150.0" text="Songs">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="10.0" layoutY="80.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="artistsIconImage" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#artistsAction" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/icons8-microfono-2-48.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="artistsLabel" onMouseClicked="#artistsAction" prefHeight="65.0" prefWidth="150.0" text="Artists">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="userHBox" alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="userImageView" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#userSettingsAction" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@icons/icons8-utente-48%20(1).png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="usersLabel" onMouseClicked="#userSettingsAction" prefHeight="65.0" prefWidth="150.0" text="Users">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="settingsHBox" alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="10.0" prefWidth="147.0" styleClass="hbox" stylesheets="@style/style-label.css">
+                           <children>
+                              <ImageView fx:id="settingsImageView" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#settingsAction" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@icons/icons8-nuovo-libro-indirizzo-48.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Label fx:id="settingsLabel" onMouseClicked="#settingsAction" prefHeight="65.0" prefWidth="150.0" text="Settings">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="89.0" prefWidth="790.0" style="-fx-background-color: #016170;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

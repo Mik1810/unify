@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="413.0" prefWidth="647.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.unify.controller.HomeController">
+   <children>
+      <HBox prefHeight="36.0" prefWidth="643.0">
+         <children>
+            <Label prefHeight="33.0" prefWidth="146.0" text="Songs">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="19.0" prefWidth="643.0">
+         <children>
+            <HBox minHeight="170.0" minWidth="100.0" prefHeight="110.0" prefWidth="643.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="212.0">
+                     <children>
+                        <ImageView fx:id="song1Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#song1MenuAction" pickOnBounds="true">
+                           <image>
+                              <Image url="@icons/music-placeholder.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="song1Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#song1MenuAction" prefHeight="35.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="170.0" prefWidth="212.0">
+                     <children>
+                        <ImageView fx:id="song2Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#song2MenuAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/music-placeholder.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="song2Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#song2MenuAction" prefHeight="18.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="222.0" layoutY="10.0" prefHeight="170.0" prefWidth="212.0">
+                     <children>
+                        <ImageView fx:id="song3Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#song3MenuAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/music-placeholder.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="song3Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#song3MenuAction" prefHeight="18.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label prefHeight="16.0" prefWidth="146.0" text="Album">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="3.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <HBox minHeight="170.0" minWidth="100.0" prefHeight="110.0" prefWidth="643.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="212.0">
+               <children>
+                  <ImageView fx:id="album1Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#album1MenuAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/music-placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="album1Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#album1MenuAction" prefHeight="18.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="170.0" prefWidth="212.0">
+               <children>
+                  <ImageView fx:id="album2Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#album2MenuAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/music-placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="album2Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#album2MenuAction" prefHeight="18.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="222.0" layoutY="10.0" prefHeight="170.0" prefWidth="212.0">
+               <children>
+                  <ImageView fx:id="album3Image" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#album3MenuAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/music-placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="album3Label" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#album3MenuAction" prefHeight="18.0" prefWidth="144.0" text="Title - Author" wrapText="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

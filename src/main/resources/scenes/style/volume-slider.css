@@ -1,0 +1,4 @@
+.slider .axis { 
+	-fx-tick-label-fill: white; 
+	-fx-tick-label-font-weight: bold;
+}
